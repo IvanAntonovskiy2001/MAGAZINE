@@ -13,7 +13,7 @@
     <div>
         <form action="/product/${product.id}" method="get">
 
-        <p><b>${product.title}</b> ${product.price} руб. | <input type="submit" value="Информация о товаре." /></p>
+        <p><b>${product.name}</b> ${product.price} руб. | <input type="submit" value="Информация о товаре." /></p>
         </form>
     </div>
     <#else>
@@ -24,7 +24,7 @@
 <#list products as product>
     <div>
         <form action="/cart/${product.title}" method="get">
-        <p><b>${product.title} - ${product.name}</b> ${product.price} руб. <input type="submit" value="Добавить в корзину" />  </p>
+        <p><b>${product.name} - </b> ${product.price} руб. <input type="submit" value="Добавить в корзину" />  </p>
         </form>
     </div>
 <#else>
@@ -40,6 +40,11 @@
 <hr>
 <form action="/basket" method="get">
     <H2>Зайти в корзину : <input type="submit" value="Корзина" /></H2>
+</form>
+
+
+<form action="/categories" method="get">
+    <input type="submit" value="категории" />
 </form>
 
 </body>
