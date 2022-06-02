@@ -8,11 +8,7 @@
 
 <h3>Создать новый товар</h3>
 <form action="/product/create" method="post">
-    Вид товара: <Br>
-    <input type="radio" name="title" value="Milk"> Milk<Br>
-    <input type="radio" name="title" value="Meet"> Meet<Br>
-    <input type="radio" name="title" value="Vegetables"> Vegetables<Br>
-    <input type="radio" name="title" value="Fruit"> Fruit<Br>
+    Вид товара: <input type="text" name="title"/><br><br>
     Название товара: <input type="text" name="name"/><br><br>
     Описание объявления: <input type="text" name="description"/><br><br>
     Цена: <input type="number" name="price"/><br><br>
