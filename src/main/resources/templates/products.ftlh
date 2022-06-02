@@ -4,7 +4,6 @@
     <title>Магазин "У Петровича"</title>
 </head>
 <body>
-<a href="/login">Войти</a><hr>
 <form action="/product/create" method="get">
 <h1>Магазин "У Петровича"...<< Создать товар для потребительской корзины>> - <input type="submit" value="Добавить новый товар в каталог" />
 </form>
