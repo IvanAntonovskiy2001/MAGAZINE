@@ -18,6 +18,9 @@
     <#else>
     <h3>Товаров нет</h3>
 </#list>
+<form action="/categories" method="get">
+    <input type="submit" value="категории" />
+</form>
 <hr>
 <h1>Выбирите товар : </h1>
 <#list products as product>
@@ -42,9 +45,6 @@
 </form>
 
 
-<form action="/categories" method="get">
-    <input type="submit" value="категории" />
-</form>
 
 </body>
 </html>
